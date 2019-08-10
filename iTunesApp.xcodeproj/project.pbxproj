@@ -16,6 +16,8 @@
 		60F0A2F222FE9BB9000A628A /* iTunesAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F0A2F122FE9BB9000A628A /* iTunesAppTests.swift */; };
 		60F0A2FD22FE9BB9000A628A /* iTunesAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F0A2FC22FE9BB9000A628A /* iTunesAppUITests.swift */; };
 		60F0A30B22FE9C89000A628A /* iTunesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F0A30A22FE9C89000A628A /* iTunesAPI.swift */; };
+		60F0A31122FE9D08000A628A /* MediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F0A31022FE9D08000A628A /* MediaType.swift */; };
+		60F0A31322FE9DB3000A628A /* MediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F0A31222FE9DB3000A628A /* MediaItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		60F0A2FC22FE9BB9000A628A /* iTunesAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesAppUITests.swift; sourceTree = "<group>"; };
 		60F0A2FE22FE9BB9000A628A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60F0A30A22FE9C89000A628A /* iTunesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesAPI.swift; sourceTree = "<group>"; };
+		60F0A31022FE9D08000A628A /* MediaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaType.swift; sourceTree = "<group>"; };
+		60F0A31222FE9DB3000A628A /* MediaItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +111,6 @@
 				60F0A30C22FE9CB2000A628A /* Models */,
 				60F0A2DA22FE9BB4000A628A /* AppDelegate.swift */,
 				60F0A2DC22FE9BB4000A628A /* SceneDelegate.swift */,
-				60F0A30A22FE9C89000A628A /* iTunesAPI.swift */,
 				60F0A2E022FE9BB8000A628A /* Assets.xcassets */,
 				60F0A2E522FE9BB8000A628A /* LaunchScreen.storyboard */,
 				60F0A2E822FE9BB8000A628A /* Info.plist */,
@@ -145,6 +148,8 @@
 		60F0A30C22FE9CB2000A628A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				60F0A31022FE9D08000A628A /* MediaType.swift */,
+				60F0A31222FE9DB3000A628A /* MediaItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -167,6 +172,7 @@
 		60F0A30F22FE9CCD000A628A /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				60F0A30A22FE9C89000A628A /* iTunesAPI.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -302,10 +308,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60F0A31122FE9D08000A628A /* MediaType.swift in Sources */,
 				60F0A30B22FE9C89000A628A /* iTunesAPI.swift in Sources */,
 				60F0A2DB22FE9BB4000A628A /* AppDelegate.swift in Sources */,
 				60F0A2DD22FE9BB4000A628A /* SceneDelegate.swift in Sources */,
 				60F0A2DF22FE9BB5000A628A /* ContentView.swift in Sources */,
+				60F0A31322FE9DB3000A628A /* MediaItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
