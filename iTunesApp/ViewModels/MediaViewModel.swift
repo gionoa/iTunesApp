@@ -1,12 +1,12 @@
 //
-//  ContentView.swift
+//  MediaViewModel.swift
 //  iTunesApp
 //
-//  Created by Giovanni Noa on 8/10/19.
+//  Created by Giovanni Noa on 8/13/19.
 //  Copyright © 2019 Giovanni Noa. All rights reserved.
 //
 
-import SwiftUI
+import Foundation
 
 class MediaViewModel: ObservableObject {
     @Published var mediaItems = [MediaItem]()
@@ -30,25 +30,3 @@ class MediaViewModel: ObservableObject {
         }
     }
 }
-
-struct MediaListView: View {
-    @ObservedObject var mediaViewModel = MediaViewModel()
-    
-    var body: some View {
-        List(mediaViewModel.mediaItems) { mediaItem in
-            Text(mediaItem.title)
-        }
-            .onAppear {
-                print("YO")
-                print(self.mediaViewModel.mediaItems)
-        }
-    }
-}
-
-#if DEBUG
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        MediaListView()
-    }
-}
-#endif

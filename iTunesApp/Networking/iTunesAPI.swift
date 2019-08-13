@@ -22,7 +22,6 @@ struct Result: Codable {
     let artworkUrl100: String
 }
 
-
 enum NetworkingError: Error {
     case error(String)
 }
