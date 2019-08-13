@@ -8,7 +8,8 @@
 
 import Foundation
 
-struct MediaItem {
+struct MediaItem: Identifiable {
+    let id = UUID()
     let title: String
     let imageURL: String
     let mediaType: MediaType
